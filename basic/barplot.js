@@ -25,7 +25,7 @@ var hyAxis = d3.svg.axis().scale(hyScale).orient("left");
 var hBar = d3.select("body").append("svg")
   .attr("width", gWidth)
   .attr("height", gHeight)
-  .attr("transform", "translate(0, " + gHeight + ")")
+  .attr("y", gHeight)
   .attr("id", "hBar")
   .append("g")
   .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
